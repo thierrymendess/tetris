@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TETRIS ULTIMATE</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="arcade">
+        <div class="game-layout">
+            <div class="screen-container">
+                <canvas id="tetris" width="240" height="400"></canvas>
+                <div class="scanlines"></div>
+            </div>
+
+            <aside class="side-panel">
+                <div class="stat-box">
+                    <p>NEXT</p>
+                    <canvas id="next" width="80" height="80"></canvas>
+                </div>
+                <div class="stat-box">
+                    <p>SCORE</p>
+                    <span id="score">00000</span>
+                </div>
+                <div class="stat-box">
+                    <p>HIGH</p>
+                    <span id="hiscore">00000</span>
+                </div>
+                <button id="start-btn">START</button>
+            </aside>
+        </div>
+    </div>
+
+    <script src="js/audio.js"></script>
+    <script src="js/piece.js"></script>
+    <script src="js/arena.js"></script>
+    <script src="js/player.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
